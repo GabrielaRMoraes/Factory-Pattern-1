@@ -41,7 +41,7 @@ spl_autoload_register(function ($classe) {
             $row = $result->fetch(PDO::FETCH_ASSOC);
             // exibe os resultados 
 
-            echo $row['codigo'] .'-'. $row['nome'] ."<br>\n";
+            echo $row['codigo'] .' - '. $row['nome'] ."<br>\n";
                     }
 
             // fecha a conexão 
