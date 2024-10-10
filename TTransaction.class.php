@@ -19,7 +19,7 @@ final class TTransaction
     {
         // Abre uma conexão com o banco de dados e armazena na propriedade estática $conn
         if(empty(self::$conn)){
-                self::$conn = TConnection::open($database);
+            self::$conn = TConnection::open($database);
         }
     }
 
@@ -57,8 +57,4 @@ final class TTransaction
     }   
 
 }
-
-
-
-
 ?>
