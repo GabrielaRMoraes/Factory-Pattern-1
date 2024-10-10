@@ -41,7 +41,7 @@ spl_autoload_register(function ($classe) {
             $row = $result->fetch(PDO::FETCH_ASSOC);
             // exibe os resultados 
 
-            echo $row['codigo'] .' - '. $row['nome'] ."<br>\n";
+            echo $row['codigo'] .'-'. $row['nome'] ."<br>\n";
                     }
 
             // fecha a conexão 
@@ -54,7 +54,7 @@ spl_autoload_register(function ($classe) {
         print "ERRO!:".$e->getMessage()."<br>\n";
         die();
     }
-    /*try
+    /* try
     {
         // abre conexão com a base pg_livro 
         $conn = TConnection::open('pg_livro');
@@ -78,6 +78,5 @@ spl_autoload_register(function ($classe) {
         die();
     }*/
 ?>
-
 
 
